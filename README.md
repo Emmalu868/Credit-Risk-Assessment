@@ -1,2 +1,2 @@
 # Music-Recommendation-System
-Group 2 project - Music recommedation
+Group 3 project - Music recommedation
