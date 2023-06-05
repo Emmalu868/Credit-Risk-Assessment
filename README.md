@@ -1,6 +1,7 @@
 # Music-Recommendation-System
 
-## In this project, we use the dataset from Asia's leading music streaming service to build a better music recommendation system.
+## Scope
+In this project, we use the dataset from Asia's leading music streaming service to build a better music recommendation system.
 We will try to determine which new song or which new artist a listener might like based on their previous choices.
 The primary task is to predict the chances of a user listening to a song repetitively within a time frame.
 In the dataset, the prediction is marked as 1 if the user has listened to the same song within a month.
