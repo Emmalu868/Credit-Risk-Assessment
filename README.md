@@ -3,6 +3,15 @@
 ## Project background
 Credit default risk is the chance that companies/individuals cannot make the required payments on their debt obligations, which can lead to a possibility of loss for a lender. Earlier credit analysts would perform risk management by analyzing the borrower’s credentials and capabilities, but this was prone to errors. With the advent of Machine learning, ML algorithms can perform a credit risk assessment with better precision and much faster than any humans.
 
+## Project Goal
+To quickly assess credit risk associated to companies or individuals with a high degree of accuracy.
+
+## Project Objectives
+1.  Obtain source data and create a usable dataset for testing and training an ML model.
+2.  Create an ML model that will produce a positive or negative credit risk rating for each company or individual
+3.  Create a user friendly output (suggestion only).
+4.  Create a simple user interface for the ML model (this is a suggestion only).
+
 ## Data sets
 Credit Risk Dataset | Kaggle [https://www.kaggle.com/datasets/laotse/credit-risk-dataset]
 
