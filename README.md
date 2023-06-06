@@ -1,11 +1,14 @@
-# Music-Recommendation-System
+# Credit Risk Assessment 
 
-## In this project, we use the dataset from Asia's leading music streaming service to build a better music recommendation system.
-We will try to determine which new song or which new artist a listener might like based on their previous choices.
-The primary task is to predict the chances of a user listening to a song repetitively within a time frame.
-In the dataset, the prediction is marked as 1 if the user has listened to the same song within a month.
-The dataset consists of which song has been heard by which user and at what time.
-Use classification machine learning algorithms to solve this classification problem and as a challenge, try using deep learning algorithms like neural network.
+## Project background
+Credit default risk is the chance that companies/individuals cannot make the required payments on their debt obligations, which can lead to a possibility of loss for a lender. Earlier credit analysts would perform risk management by analyzing the borrower’s credentials and capabilities, but this was prone to errors. With the advent of Machine learning, ML algorithms can perform a credit risk assessment with better precision and much faster than any humans.
+
+## Data sets: 
+Credit Risk Dataset | Kaggle [https://www.kaggle.com/datasets/laotse/credit-risk-dataset]
+
+## Tech-stack
+To start this machine learning project, download the Credit Risk Dataset. Load the dataset into a data frame and remove rows of data NaN values. Also, convert the categorical values into numerical values using Label encoding. Our data is imbalanced. Hence, we use the stratifiedKFold method to split the dataset into training and testing sets.
+Machine learning algorithms that can be used are KNN, logistic regression, and XGBoost(Extreme Gradient Boosting) algorithms. You can use the performance metrics like Accuracy, Precision, Recall, and F1 score to evaluate your model’s performance. However, since the training data was imbalanced, the Area Under the Curve for the ROC curve would be a better evaluation metric.
 
 ## Group member
 - Karthika Ramachandran
