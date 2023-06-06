@@ -3,14 +3,14 @@
 ## Project background
 Credit default risk is the chance that companies/individuals cannot make the required payments on their debt obligations, which can lead to a possibility of loss for a lender. Earlier credit analysts would perform risk management by analyzing the borrower’s credentials and capabilities, but this was prone to errors. With the advent of Machine learning, ML algorithms can perform a credit risk assessment with better precision and much faster than any humans.
 
-## Data sets: 
+## Data sets
 Credit Risk Dataset | Kaggle [https://www.kaggle.com/datasets/laotse/credit-risk-dataset]
 
 ## Tech-stack
 To start this machine learning project, download the Credit Risk Dataset. Load the dataset into a data frame and remove rows of data NaN values. Also, convert the categorical values into numerical values using Label encoding. Our data is imbalanced. Hence, we use the stratifiedKFold method to split the dataset into training and testing sets.
 Machine learning algorithms that can be used are KNN, logistic regression, and XGBoost(Extreme Gradient Boosting) algorithms. You can use the performance metrics like Accuracy, Precision, Recall, and F1 score to evaluate your model’s performance. However, since the training data was imbalanced, the Area Under the Curve for the ROC curve would be a better evaluation metric.
 
-## Group member
+## Group members
 - Karthika Ramachandran
 - Shan Lu
 - Mohammad Zahur
