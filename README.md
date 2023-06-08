@@ -8,17 +8,16 @@ Credit default risk is the chance that companies/individuals cannot make the req
 To quickly assess credit risk associated with companies or individuals with a high degree of accuracy.
 
 ## Project Objectives
-1.  Obtain source data and create a usable dataset for testing and training an ML model.
-2.  Create an ML model that will produce a positive or negative credit risk rating for each company or individual
-3.  Create a user friendly output (suggestion only).
-4.  Create a simple user interface for the ML model (this is a suggestion only).
+1. Obtain source data and create a usable dataset for testing and training an ML model using logistic regression model and XGBoost model and compare the results.
+2. Use a logistic regression model to analyze new source data.
+3. Create a simple user interface for the ML model in AWS.
 
 ## Data Sets
 Credit Risk Dataset | Kaggle [https://www.kaggle.com/datasets/laotse/credit-risk-dataset]
+ “loan_data_2007_2014.csv”
 
 ## Tech-stack
-To start this machine learning project, download the Credit Risk Dataset. Load the dataset into a data frame and remove rows of data NaN values. Also, convert the categorical values into numerical values using Label encoding. Our data is imbalanced. Hence, we use the stratifiedKFold method to split the dataset into training and testing sets.
-Machine learning algorithms that can be used are KNN, logistic regression, and XGBoost(Extreme Gradient Boosting) algorithms. You can use the performance metrics like Accuracy, Precision, Recall, and F1 score to evaluate your model’s performance. However, since the training data was imbalanced, the Area Under the Curve for the ROC curve would be a better evaluation metric.
+Predict creditworthiness using Logistic Regression and XGBoost machine learning models on Jupyter Notebook and evaluate the model’s performance. Build an user interface for the models in Amazon Web Services using Lambda function.
 
 ## Group Members
 - Karthika Ramachandran
