@@ -13,11 +13,19 @@ To quickly assess credit risk associated with companies or individuals with a hi
 3. Create a simple user interface for the ML model in AWS.
 
 ## Data Sets
-Credit Risk Dataset | Kaggle [https://www.kaggle.com/datasets/laotse/credit-risk-dataset]
- “loan_data_2007_2014.csv”
+* Credit Risk Dataset | Kaggle [https://www.kaggle.com/datasets/laotse/credit-risk-dataset]
+* **[loan_data_2007_2014.csv](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/Resources/credit_risk_dataset.csv)**
 
 ## Tech-stack
-Predict creditworthiness using Logistic Regression and XGBoost machine learning models on Jupyter Notebook and evaluate the model’s performance. Build an user interface for the models in Amazon Web Services using Lambda function.
+Predict creditworthiness using Logistic Regression and XGBoost machine learning models on Jupyter Notebook and evaluate the model’s performance. 
+Build an user interface for the models in Amazon Web Services using Lambda function.
+
+## Data Pre-processing, Exploration and Analysis 
+Part 1 - Logistic Regression Model 
+
+Part 2 - Logistic Regression Model vs XGBoost Model
+
+Part 3 - Logistic Regression Model on new resource data
 
 ## Group Members
 - Karthika Ramachandran
