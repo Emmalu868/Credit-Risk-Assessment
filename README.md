@@ -38,7 +38,7 @@ Build an user interface for the models in Amazon Web Services using Lambda funct
 *  `!pip install xgboost` and fit a XG Boost model by using the training data (X_train and y_train)
 *  Saved the predictions on the testing data labels by using the testing feature data (X_test) and the fitted model.
 *  Used `model_assess` function, evaluated the model’s performance and printed the classification report.
-* ![](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/Images/lg_vs_XGB_classification_report.png)
+ ![](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/Images/lg_vs_XGB_classification_report.png)
 ### Analysis (Note: 0: healthy loan ; 1: high-risk loan)
 * The overall accruacy for XGBoost is 94%, 15% higher than logistic regression model.
 * XGBoost: The precision of 1(high-risk loan) is 93%, recall for 1(high-risk loan) is 74%.
