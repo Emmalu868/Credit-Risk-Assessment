@@ -21,11 +21,31 @@ Predict creditworthiness using Logistic Regression and XGBoost machine learning 
 Build an user interface for the models in Amazon Web Services using Lambda function.
 
 ## Data Pre-processing, Exploration and Analysis 
-Part 1 - Logistic Regression Model 
+### Part 1 - Logistic Regression Model 
 
-Part 2 - Logistic Regression Model vs XGBoost Model
+### Part 2 - Logistic Regression Model vs XGBoost Model
+* Used Pandas `read_csv` function and Path module to read the "credit_risk_dataset.csv"
+* Checked missing values by using `isnull().sum()` and used `dropna` to drop missing values
+* Imported "plotly.express" and used `scatter_matrix` to determine the outliners
+![](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/Images/scatter_matrix.png)
+* Removed outliners `["person_age"]<=100]`, `["person_emp_length"]<=100]`,`["person_income"]<= 4000000]`
+#### Given the nature of our dataset, we’d expect that we’re dealing with an imbalanced classification problem, meaning that we have considerably more non-default cases than default cases. Using the code below, we confirm that this is indeed the case with 78.3% of our dataset containing non-default cases.
+* 78.3% = `credit_risk_df[credit_risk_df.loan_status == 0].loan_status.count()/credit_risk_df.loan_status.count()`
+* Created the labels set (y) from the “loan_status” column
+* One hot encoding of categorical variables, used `get_dummies`,and then create the features (X) DataFrame from the remaining columns.
+*  Checked the balance of the labels variable (y) by using the `value_counts` function.
+*  Splited the data into training and testing datasets by using `train_test_split`.
+*  `!pip install xgboost` and fit a XG Boost model by using the training data (X_train and y_train)
+*  Saved the predictions on the testing data labels by using the testing feature data (X_test) and the fitted model.
+*  Used `model_assess` function, evaluated the model’s performance and printed the classification report.
+* ![](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/Images/lg_vs_XGB_classification_report.png)
+### Analysis (Note: 0: healthy loan ; 1: high-risk loan)
+* The overall accruacy for XGBoost is 94%, 15% higher than logistic regression model.
+* XGBoost: The precision of 1(high-risk loan) is 93%, recall for 1(high-risk loan) is 74%.
+* Precision: Out of all portfolios that the model predicted would have high-risk loan, 94% did. It is a very good result.
+* Recall: Out of all the portfolios that actually did have high risk loan, the model predicted this outcome correctly for 74% of high-risk-loans portfolios.
 
-Part 3 - Logistic Regression Model on new resource data
+### Part 3 - Logistic Regression Model on new resource data
 
 ## Group Members
 - Karthika Ramachandran
