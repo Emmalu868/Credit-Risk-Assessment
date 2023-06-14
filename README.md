@@ -54,5 +54,5 @@ Build an user interface for the models in Amazon Web Services using Lambda funct
 - Larry Gagnon
 
 ## Challenges 
-* AWS dependency issues
+* AWS  dependency issues included numpy, pandas, and sklearn. Finding alternative libraries and keeping within size restrictions was not possible. Resolved by using an laternative platform - flask.
 
