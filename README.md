@@ -58,9 +58,14 @@ Build an user interface for the models in Amazon Web Services using Lambda funct
 * Used `model_assess` function, evaluated the model’s performance and printed the classification report.
  ![](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/c7ec0e84e11241779d432e61156da0058b59fc76/Images/Screenshot%202023-06-14%20190043.png)
 ### Analysis (Note: 0: healthy loan ; 1: high-risk loan)
-* The precision is 0.92, indicating that 92% of the predicted negative instances are correct. For class 1 (positive), the precision is 0.40, meaning that only 40% of the predicted positive instances are correct based on overload of data meaning it did not perform well.
-* F1-score is 0.77, indicating a reasonable balance between precision and recall. For class 1, the F1-score is 0.53, which is relatively lower due to the lower precision and higher recall.
-* The overall accuracy of the model is 0.70, indicating that it correctly predicts the class label for 70% of the instances.
+* The recall for class 0.0 is 0.25, which means that the model only captures 25% of the actual positive instances of high-risk-loans portfolios.
+* The F1-score for class 0.0 is 0.40, indicating a moderate balance between precision and recall for this class.
+* the weighted average precision is 1.00, the weighted average recall is 0.25, and the weighted average F1-score is 0.40.
+* Accuracy measures the overall correctness of the model's predictions. The accuracy reported in the classification report is 0.25, meaning that the model correctly predicted 25% of the instances in the dataset. Pot
+
+
+## Challenges 
+* AWS  dependency issues included numpy, pandas, and sklearn. Finding alternative libraries and keeping within size restrictions was not possible. Resolved by using a "next-best" alternative platform - flask. (
 
 
 ## Group Members
@@ -68,7 +73,3 @@ Build an user interface for the models in Amazon Web Services using Lambda funct
 - Shan Lu
 - Mohammad Zahur
 - Larry Gagnon
-
-## Challenges 
-* AWS  dependency issues included numpy, pandas, and sklearn. Finding alternative libraries and keeping within size restrictions was not possible. Resolved by using a "next-best" alternative platform - flask. (
-
