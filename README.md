@@ -1,6 +1,12 @@
 # Credit Risk Assessment 
 ![](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/Karthika/Images/credit-report.jpg)
 
+## Group Members
+- Karthika Ramachandran
+- Shan Lu
+- Mohammad Zahur
+- Larry Gagnon
+
 ## Project Background
 Credit default risk is the chance that companies/individuals cannot make the required payments on their debt obligations, which can lead to a possibility of loss for a lender. Earlier credit analysts would perform risk management by analyzing the borrower’s credentials and capabilities, but this was prone to errors. With the advent of Machine learning, ML algorithms can perform a credit risk assessment with better precision and much faster than any humans.
 
@@ -68,8 +74,4 @@ Build an user interface for the models in Amazon Web Services using Lambda funct
 * AWS  dependency issues included numpy, pandas, and sklearn. Finding alternative libraries and keeping within size restrictions was not possible. Resolved by using a "next-best" alternative platform - flask. (
 
 
-## Group Members
-- Karthika Ramachandran
-- Shan Lu
-- Mohammad Zahur
-- Larry Gagnon
+
