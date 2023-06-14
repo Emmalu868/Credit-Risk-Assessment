@@ -54,3 +54,5 @@ Build an user interface for the models in Amazon Web Services using Lambda funct
 - Larry Gagnon
 
 ## Challenges 
+* AWS dependency issues
+
