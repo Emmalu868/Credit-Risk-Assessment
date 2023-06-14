@@ -46,6 +46,22 @@ Build an user interface for the models in Amazon Web Services using Lambda funct
 * Recall: Out of all the portfolios that actually did have high risk loan, the model predicted this outcome correctly for 74% of high-risk-loans portfolios.
 
 ### Part 3 - Logistic Regression Model on new resource data
+* Loaded all the appropriate libraries 
+* Used Pandas `read_csv` function and Path module to read the "loan_data_2015.csv"
+* Changed Loan status to binary code 0 - 1, Issued: 0, Current: 1
+* Drop unnecessary columns
+* Checked missing values by using `isnull().sum()` and used `dropna` to drop missing values
+* Checked outlier scatterplot. 
+* Created the labels set (y) from the “loan_status” column
+* Splited the data into training and testing datasets by using `train_test_split`.
+* Saved the predictions on the testing data labels by using the testing feature data (X_test) and the fitted model.
+* Used `model_assess` function, evaluated the model’s performance and printed the classification report.
+ ![](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/c7ec0e84e11241779d432e61156da0058b59fc76/Images/Screenshot%202023-06-14%20190043.png)
+### Analysis (Note: 0: healthy loan ; 1: high-risk loan)
+* The precision is 0.92, indicating that 92% of the predicted negative instances are correct. For class 1 (positive), the precision is 0.40, meaning that only 40% of the predicted positive instances are correct based on overload of data meaning it did not perform well.
+* F1-score is 0.77, indicating a reasonable balance between precision and recall. For class 1, the F1-score is 0.53, which is relatively lower due to the lower precision and higher recall.
+* The overall accuracy of the model is 0.70, indicating that it correctly predicts the class label for 70% of the instances.
+
 
 ## Group Members
 - Karthika Ramachandran
