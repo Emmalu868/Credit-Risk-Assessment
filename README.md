@@ -15,7 +15,7 @@ This project aims at- <br>
 * evaluating and comaparing the models' performance
 * creating a simple user interface on Flask 
 
-## DataSets
+## Datasets
 * [credit_risk_dataset](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/Resources/credit_risk_dataset.csv) | [Kaggle](https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
 * [loan_data_2015](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/Resources/loan_data_2015.csv) | [Drop Box](https://www.dropbox.com/sh/7oslws1xhsm1zbf/AABc2smPMio5-_cQHLsrBT0Xa/Dataset?dl=0&subfolder_nav_tracking=1)
 
