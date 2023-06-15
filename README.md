@@ -1,5 +1,5 @@
 # Credit Risk Assessment 
-![](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/Karthika/Images/credit-report.jpg)
+![](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/Images/credit-report.jpg)
 
 ## Group Members
 - Karthika Ramachandran
@@ -46,7 +46,19 @@ Build an user interface for the models in Amazon Web Services using Lambda funct
 *  Evaluated the model’s performance by calculating the accuracy score of the model, generating a confusion matrix and printing the classification report.
 #### Analysis:
 ![](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/Images/2score.png) <br>
-The model performs well as per the accuracy score (70%). Also, the classification report shows that the model predicted healthy loans (0) 92% of the time and non-healthy loans (1) 40% of the time. 
+##### Accuracy Score 
+The model has an accuracy score of 70% which is not a very good score for credit risk assessment where the consequences of misclassification can have significant financial implications.
+##### Precision
+* Precision for class 0 (non-defaulting borrowers): Out of all the instances predicted as non-defaulting borrowers, 92% of them are correctly classified. This indicates a low false positive rate for non-defaulting borrowers, which is desirable.
+* Precision for class 1 (defaulting borrowers): Out of all the instances predicted as defaulting borrowers, only 40% of them are correctly classified. This suggests a higher false positive rate for defaulting borrowers, which means the model is less accurate in identifying the borrowers who are likely to default.<br>
+While a high precision for the negative class (non-defaulting borrowers) is generally desirable to minimize false positives, a low precision for the positive class (defaulting borrowers) can be problematic. In credit risk assessment, accurately identifying defaulting borrowers is crucial to mitigate financial risks.
+##### Recall
+* Recall for class 0 (non-defaulting borrowers): Out of all the actual instances of non-defaulting borrowers, the model correctly identifies 67% of them. This means that the model has a moderate ability to capture non-defaulting borrowers.
+* Recall for class 1 (defaulting borrowers): Out of all the actual instances of defaulting borrowers, the model correctly identifies 78% of them. This suggests that the model has a higher ability to identify defaulting borrowers compared to non-defaulting borrowers.<br>
+A high recall for the positive class (defaulting borrowers) is desirable in credit risk assessment as it indicates that the model is effective at capturing a significant portion of borrowers who are likely to default. However, a lower recall for the negative class (non-defaulting borrowers) implies that the model may miss some non-defaulting borrowers, leading to false negatives.
+##### F1 Score
+* F1 score for class 0 (non-defaulting borrowers): The F1 score considers both precision and recall and provides a balanced evaluation metric. An F1 score of 77% for non-defaulting borrowers suggests that the model achieves a good balance between precision and recall for this class.
+* F1 score for class 1 (defaulting borrowers): The F1 score of 53% for defaulting borrowers indicates that the model's performance in correctly identifying defaulting borrowers needs improvement, as it achieves a lower balance between precision and recall for this class.
 
 ### Part 2 - Logistic Regression Model vs XGBoost Model
 * Used Pandas `read_csv` function and Path module to read the "credit_risk_dataset.csv"
