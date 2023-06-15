@@ -53,7 +53,7 @@ A high recall for the positive class (defaulting borrowers) is desirable in cred
 * F1 score for class 0 (non-defaulting borrowers): The F1 score considers both precision and recall and provides a balanced evaluation metric. An F1 score of 77% for non-defaulting borrowers suggests that the model achieves a good balance between precision and recall for this class.
 * F1 score for class 1 (defaulting borrowers): The F1 score of 53% for defaulting borrowers indicates that the model's performance in correctly identifying defaulting borrowers needs improvement, as it achieves a lower balance between precision and recall for this class.
 
-### Part 2 - Logistic Regression Model vs XGBoost Model
+### Part 2 - [Logistic Regression Model vs XGBoost Model](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/XGBoost.ipynb)
 * Used Pandas `read_csv` function and Path module to read the "credit_risk_dataset.csv"
 * Checked missing values by using `isnull().sum()` and used `dropna` to drop missing values
 * Imported "plotly.express" and used `scatter_matrix` to determine the outliners
@@ -69,11 +69,13 @@ A high recall for the positive class (defaulting borrowers) is desirable in cred
 *  Saved the predictions on the testing data labels by using the testing feature data (X_test) and the fitted model.
 *  Used `model_assess` function, evaluated the model’s performance and printed the classification report.
  ![](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/Images/lg_vs_XGB_classification_report.png)
-#### Analysis (Note: 0: healthy loan ; 1: high-risk loan)
-* The overall accruacy for XGBoost is 94%, 13% higher than logistic regression model.
-* XGBoost: The precision of 1(high-risk loan) is 95% vs 76% of 1 for LG model, recall for 1(high-risk loan) is 74%, higher than 1 in LG.
-* Precision: Out of all portfolios that the model predicted would have high-risk loan, 95% did. It is a very good result.
-* Recall: Out of all the portfolios that actually did have high risk loan, the model predicted this outcome correctly for 74% of high-risk-loans portfolios.
+#### Analysis and Conclusion (Note: 0: healthy loan ; 1: high-risk loan)
+* Accuracy: Although we used imbalanced dataset, the overall accruacy for XGBoost is 94%, 13% higher than logistic regression model. 
+* XGBoost on the precision of 1(high-risk loan) is 95% vs 76% of 1 for LG model, XGboost is performing much better. Out of all portfolios that the model predicted would have high-risk loan, 95% did. It is an outstanding result.
+* XGboost on the recall for 1(high-risk loan) is 74%, higher than 1 in LG, 16%. Out of all the portfolios that actually did have high risk loan, the model predicted this outcome correctly for 74% of high-risk-loans portfolios.
+* LG model has 81% precision and 99% recall on healthy loan(0), however XGBoost ends with even higher result(93% on precision and 99% on recall).
+* F1-score of LG model is 89% on healthy loan(0) and 27% on high-risk loan(1), f1-score for XGBoost is 96% on healthy loan(0) and 83% on high-risk loan(1).
+* Overall, XGBoost model wins on all matrix as to imbalanced data.
 
 ### Part 3 - Logistic Regression Model on new resource data
 * Loaded all the appropriate libraries 
