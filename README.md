@@ -67,7 +67,7 @@ The model performs well as per the accuracy score (70%). Also, the classificatio
 #### Analysis (Note: 0: healthy loan ; 1: high-risk loan)
 * The overall accruacy for XGBoost is 94%, 13% higher than logistic regression model.
 * XGBoost: The precision of 1(high-risk loan) is 95% vs 76% of 1 for LG model, recall for 1(high-risk loan) is 74%, higher than 1 in LG.
-* Precision: Out of all portfolios that the model predicted would have high-risk loan, 94% did. It is a very good result.
+* Precision: Out of all portfolios that the model predicted would have high-risk loan, 95% did. It is a very good result.
 * Recall: Out of all the portfolios that actually did have high risk loan, the model predicted this outcome correctly for 74% of high-risk-loans portfolios.
 
 ### Part 3 - Logistic Regression Model on new resource data
