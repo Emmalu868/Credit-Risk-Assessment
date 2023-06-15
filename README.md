@@ -64,7 +64,7 @@ The model performs well as per the accuracy score (70%). Also, the classificatio
 *  Saved the predictions on the testing data labels by using the testing feature data (X_test) and the fitted model.
 *  Used `model_assess` function, evaluated the model’s performance and printed the classification report.
  ![](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/Images/lg_vs_XGB_classification_report.png)
-### Analysis (Note: 0: healthy loan ; 1: high-risk loan)
+#### Analysis (Note: 0: healthy loan ; 1: high-risk loan)
 * The overall accruacy for XGBoost is 94%, 13% higher than logistic regression model.
 * XGBoost: The precision of 1(high-risk loan) is 95% vs 76% of 1 for LG model, recall for 1(high-risk loan) is 74%, higher than 1 in LG.
 * Precision: Out of all portfolios that the model predicted would have high-risk loan, 94% did. It is a very good result.
