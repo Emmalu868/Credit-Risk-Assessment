@@ -26,8 +26,27 @@ To quickly assess credit risk associated with companies or individuals with a hi
 Predict creditworthiness using Logistic Regression and XGBoost machine learning models on Jupyter Notebook and evaluate the model’s performance. 
 Build an user interface for the models in Amazon Web Services using Lambda function.
 
-## Data Pre-processing, Exploration and Analysis 
-### Part 1 - Logistic Regression Model 
+## Data Cleanup & Model Training and Evaluation 
+### Part 1 - [Logistic Regression Model](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/LogisticRegression.ipynb) 
+**Step 1: Data Exploration and Preprocessing** 
+* Used Pandas `read_csv` function to read the "credit_risk_dataset.csv" file as a DataFrame. 
+* Detected and removed null values using `dropna` function.
+* Identified outliers using `scatterplot matrix` and removed them.
+* Reviwed the data types and encoded categorical variables into numerical variables using `get_dummies` function.<br>
+
+**Step 2: Split the Data into Training and Testing Sets**
+* Created the labels set (y) from the “loan_status” column, and then created the features (X) DataFrame from the remaining columns.
+* Checked the balance of the labels variable (y) by using the `value_counts` function.
+* Split the data into training and testing datasets by using `train_test_split`.
+* Resampled the data using the `RandomOverSampler` module from the `imbalanced-learn library`.<br>
+
+**Step 3: Create a Logistic Regression Model**
+*  Created a logistic regression model by using the resampled training data (`X_oversampled` and `y_oversampled`).
+*  Saved the predictions on the testing data labels by using the testing feature data (`X_test`) and the fitted model.
+*  Evaluated the model’s performance by calculating the accuracy score of the model, generating a confusion matrix and printing the classification report.
+#### Analysis:
+![](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/Images/2score.png) <br>
+The model performs well as per the accuracy score (70%). Also, the classification report shows that the model predicted healthy loans (0) 92% of the time and non-healthy loans (1) 40% of the time. 
 
 ### Part 2 - Logistic Regression Model vs XGBoost Model
 * Used Pandas `read_csv` function and Path module to read the "credit_risk_dataset.csv"
@@ -40,7 +59,7 @@ Build an user interface for the models in Amazon Web Services using Lambda funct
 * Created the labels set (y) from the “loan_status” column
 * One hot encoding of categorical variables, used `get_dummies`,and then create the features (X) DataFrame from the remaining columns.
 *  Checked the balance of the labels variable (y) by using the `value_counts` function.
-*  Splited the data into training and testing datasets by using `train_test_split`.
+*  Split the data into training and testing datasets by using `train_test_split`.
 *  `!pip install xgboost` and fit a XG Boost model by using the training data (X_train and y_train)
 *  Saved the predictions on the testing data labels by using the testing feature data (X_test) and the fitted model.
 *  Used `model_assess` function, evaluated the model’s performance and printed the classification report.
