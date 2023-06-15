@@ -17,7 +17,7 @@ This project aims at- <br>
 
 ## Datasets
 * [credit_risk_dataset](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/Resources/credit_risk_dataset.csv) | [Kaggle](https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
-* [loan_data_2015](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/Resources/loan_data_2015.csv) | [Drop Box](https://www.dropbox.com/sh/7oslws1xhsm1zbf/AABc2smPMio5-_cQHLsrBT0Xa/Dataset?dl=0&subfolder_nav_tracking=1)
+* loan_data_2015 | [Drop Box](https://www.dropbox.com/sh/7oslws1xhsm1zbf/AABc2smPMio5-_cQHLsrBT0Xa/Dataset?dl=0&subfolder_nav_tracking=1)
 
 ## Data Cleanup & Model Training and Evaluation 
 ### Part 1 - [Logistic Regression Model](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/LogisticRegression.ipynb) 
