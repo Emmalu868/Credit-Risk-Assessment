@@ -12,8 +12,8 @@ Credit risk assessment is the process that lending companies use to evaluate the
 
 This project aims at- <br>
 * analysing the historical lending activity to build Logistic Regression and XGBoost models to predict the creditworthiness of borrowers
-* evaluating the models' performance
-* creating a simple user interface in Flask 
+* evaluating and comaparing the models' performance
+* creating a simple user interface on Flask 
 
 ## Data Sets
 * [credit_risk_dataset](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/Resources/credit_risk_dataset.csv) | [Kaggle](https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
