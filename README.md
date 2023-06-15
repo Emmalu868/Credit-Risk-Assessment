@@ -93,7 +93,7 @@ A high recall for the positive class (defaulting borrowers) is desirable in cred
 * The recall for class 0.0 is 0.25, which means that the model only captures 25% of the actual positive instances of high-risk-loans portfolios.
 * The F1-score for class 0.0 is 0.40, indicating a moderate balance between precision and recall for this class.
 * the weighted average precision is 1.00, the weighted average recall is 0.25, and the weighted average F1-score is 0.40.
-* Accuracy measures the overall correctness of the model's predictions. The accuracy reported in the classification report is 0.25, meaning that the model correctly predicted 25% of the instances in the dataset. Pot
+* Accuracy measures the overall correctness of the model's predictions. The accuracy reported in the classification report is 0.25, meaning that the model correctly predicted 25% of the instances in the dataset.
 
 ## Challenges 
 * Overload of data in the data file for 2015 analysis.
