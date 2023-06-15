@@ -13,7 +13,7 @@ Credit risk assessment is the process that lending companies use to evaluate the
 This project aims at- <br>
 * analysing the historical lending activity to build Logistic Regression and XGBoost models to predict the creditworthiness of borrowers
 * evaluating and comparing the models' performance
-* creating a simple user interface on Flask 
+* creating a simple user interface
 
 ## Datasets
 * [credit_risk_dataset](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/Resources/credit_risk_dataset.csv) | [Kaggle](https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
@@ -83,7 +83,7 @@ A high recall for the positive class (defaulting borrowers) is desirable in cred
 * Checked missing values by using `isnull().sum()` and used `dropna` to drop missing values
 * Checked outlier scatterplot. 
 * Created the labels set (y) from the “loan_status” column
-* Splited the data into training and testing datasets by using `train_test_split`.
+* Split the data into training and testing datasets by using `train_test_split`.
 * Saved the predictions on the testing data labels by using the testing feature data (X_test) and the fitted model.
 * Used `model_assess` function, evaluated the model’s performance and printed the classification report.
  ![](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/c7ec0e84e11241779d432e61156da0058b59fc76/Images/Screenshot%202023-06-14%20190043.png)
@@ -94,9 +94,15 @@ A high recall for the positive class (defaulting borrowers) is desirable in cred
 * Accuracy measures the overall correctness of the model's predictions. The accuracy reported in the classification report is 0.25, meaning that the model correctly predicted 25% of the instances in the dataset. Pot
 
 ## Challenges 
-* Overload of data in the data file for 2015 analysis. 
-* AWS dependency issues included numpy, pandas, and sklearn.
-* Finding alternative libraries and keeping within size restrictions was not possible. Resolved by using a "next-best" alternative platform - flask.
-
+* Overload of data in the data file for 2015 analysis.
+* For this project we wanted to go above and beyond a simple ML model. We thought that, once we had the model refined and performing well, we could build a web app that was capable of receiving csv files, triggering a function, and applying a user-selected analysis model to the data. This task proved to be more difficult than we expected.
+* AWS does not support all Python libraries. There are alternatives available, but they can be hard to find, and you have to change your code. There are some alternative strategies available to Lambda users. First, you can use an alternative library that performs in a similar manner to your original library. Second, you can add a custom layer to your Lambda function via a manually configured ZIP file that will bring in the necessary libraries. Third, you can roll up all dependencies into an image file and use that to support your function.
+* Some of the libraries we used included sklearn, numpy, pandas, imblearn and XGBoost, several of which were not supported in AWS.
+We tried adding layers, but AWS has a size limitation of 250MB, so we couldn't get sklearn imported. We then tried to use Docker to build an image, but that was much more involved and we could see that we would not meet the project deadline if we went that route.
+* So, we had to look for an alternative way to put up a simple web app. We tried Flask.
+* Natively, Flask, is better at supporting Python functions. It can manage the libraries we want to use and it is fairly lightweight.
+Being unfamiliar with Flask, there was some time lost to reading docs.  We struggled to understand routing, and integration of functions with the HTML code.
+* Uploading, storage and retrieval of CSV files also provided to be challenging. While we made some progress, the end product still needs work as it is not performing as expected.
+* Completion of this web app may take another full day of effort. 
 
 
