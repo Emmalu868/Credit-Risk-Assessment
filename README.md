@@ -7,24 +7,17 @@
 - Mohammad Zahur
 - Larry Gagnon
 
-## Project Background
-Credit default risk is the chance that companies/individuals cannot make the required payments on their debt obligations, which can lead to a possibility of loss for a lender. Earlier credit analysts would perform risk management by analyzing the borrower’s credentials and capabilities, but this was prone to errors. With the advent of Machine learning, ML algorithms can perform a credit risk assessment with better precision and much faster than any humans.
+## About the project
+Credit risk assessment is the process that lending companies use to evaluate the creditworthiness of customers before extending credit to protect their businesses from late/non payment. It involves analyzing various factors such as financial history, credit scores, income, assets, existing debts, and other relevant information to assess the risk associated with extending credit to an individual or entity. Earlier credit analysts would perform risk management by analyzing the borrower’s credentials and capabilities, but this was prone to errors. With the advent of Machine learning, ML algorithms can perform a credit risk assessment with better precision and much faster than any humans. <br>
 
-## Project Goal
-To quickly assess credit risk associated with companies or individuals with a high degree of accuracy.
-
-## Project Objectives
-1. Obtain source data and create a usable dataset for testing and training an ML model using logistic regression model and XGBoost model and compare the results.
-2. Use a logistic regression model to analyze new source data.
-3. Create a simple user interface for the ML model in AWS.
+This project aims at- <br>
+* analysing the historical lending activity to build Logistic Regression and XGBoost models to predict the creditworthiness of borrowers
+* evaluating the models' performance
+* creating a simple user interface in Flask 
 
 ## Data Sets
-* Credit Risk Dataset | Kaggle [https://www.kaggle.com/datasets/laotse/credit-risk-dataset]
-* **[loan_data_2007_2014.csv](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/Resources/credit_risk_dataset.csv)**
-
-## Tech-stack
-Predict creditworthiness using Logistic Regression and XGBoost machine learning models on Jupyter Notebook and evaluate the model’s performance. 
-Build an user interface for the models in Amazon Web Services using Lambda function.
+* [credit_risk_dataset](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/Resources/credit_risk_dataset.csv) | [Kaggle](https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
+* [loan_data_2015](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/Resources/loan_data_2015.csv) | [Drop Box](https://www.dropbox.com/sh/7oslws1xhsm1zbf/AABc2smPMio5-_cQHLsrBT0Xa/Dataset?dl=0&subfolder_nav_tracking=1)
 
 ## Data Cleanup & Model Training and Evaluation 
 ### Part 1 - [Logistic Regression Model](https://github.com/Emmalu868/Credit-Risk-Assessment/blob/main/LogisticRegression.ipynb) 
@@ -100,9 +93,9 @@ A high recall for the positive class (defaulting borrowers) is desirable in cred
 * the weighted average precision is 1.00, the weighted average recall is 0.25, and the weighted average F1-score is 0.40.
 * Accuracy measures the overall correctness of the model's predictions. The accuracy reported in the classification report is 0.25, meaning that the model correctly predicted 25% of the instances in the dataset. Pot
 
-
 ## Challenges 
-* AWS  dependency issues included numpy, pandas, and sklearn. Finding alternative libraries and keeping within size restrictions was not possible. Resolved by using a "next-best" alternative platform - flask. (
+* AWS dependency issues included numpy, pandas, and sklearn.
+* Finding alternative libraries and keeping within size restrictions was not possible. Resolved by using a "next-best" alternative platform - flask.
 
 
 
