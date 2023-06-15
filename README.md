@@ -94,6 +94,7 @@ A high recall for the positive class (defaulting borrowers) is desirable in cred
 * Accuracy measures the overall correctness of the model's predictions. The accuracy reported in the classification report is 0.25, meaning that the model correctly predicted 25% of the instances in the dataset. Pot
 
 ## Challenges 
+* Overload of data in the data file for 2015 analysis. 
 * AWS dependency issues included numpy, pandas, and sklearn.
 * Finding alternative libraries and keeping within size restrictions was not possible. Resolved by using a "next-best" alternative platform - flask.
 
