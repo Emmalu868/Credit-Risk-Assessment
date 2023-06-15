@@ -12,7 +12,7 @@ Credit risk assessment is the process that lending companies use to evaluate the
 
 This project aims at- <br>
 * analysing the historical lending activity to build Logistic Regression and XGBoost models to predict the creditworthiness of borrowers
-* evaluating and comaparing the models' performance
+* evaluating and comparing the models' performance
 * creating a simple user interface on Flask 
 
 ## Datasets
